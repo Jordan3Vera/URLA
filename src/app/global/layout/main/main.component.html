@@ -1,0 +1,61 @@
+<section>
+    <h1>Contenido principal</h1>
+</section>
+<section>
+    <article class="md:flex md:flex-nowrap sm:flex sm:flex-wrap gap-4">
+        <div>
+            <p-image src="../../../../assets/images/URLA.png" alt="Logo de la facultad" height="200" width="300" [preview]="false"></p-image>
+        </div>
+        <div class="text-justify border-dashed border-1 border-x-none p-2">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, consectetur. Facilis neque maiores 
+            quaerat inventore molestias suscipit mollitia. Adipisci distinctio assumenda doloribus debitis perferendis 
+            dolor deserunt molestias. Quibusdam repellat ut placeat nobis consequuntur odio, odit blanditiis, eveniet 
+            facere laborum porro ea, est distinctio soluta itaque modi velit ducimus dignissimos labore!</p>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis magni nisi optio fugiat alias 
+            nobis reiciendis iure cumque quaerat hic! Assumenda beatae corporis adipisci libero numquam facere repudiandae 
+            accusamus dolorum, laboriosam tempore, eum, natus perferendis cumque nihil fugit recusandae. Tempore.</p>
+        </div>
+    </article>
+
+    <article>
+        <h2>Segundo contenido principal</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt repellat eligendi aliquid totam adipisci 
+        error fugiat iure odio expedita quidem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda aut doloribus consectetur quos rem atque 
+        aperiam? Consectetur alias architecto amet reiciendis voluptas dignissimos et tempore exercitationem aliquam 
+        quis animi culpa, expedita saepe est vero nisi at accusantium! Tempore, dolore dolorum.</p>
+
+        <section>
+            <p-carousel [value]="subjectItems" [circular]="true" [showIndicators]="true" [autoplayInterval]="3000" 
+            [responsiveOptions]="responsiveOptions" [showNavigators]="true" >
+                <ng-template pTemplate="header">
+                    <h3>Asignaturas de la carrera</h3>
+                </ng-template>
+                <ng-template let-subject pTemplate="item">
+                    <div class="subject-item">
+                        <div class="subject-item-content">
+                            <h5 class="p-mb-1">○ {{subject.name}}</h5>
+                            <div class="flex gap-5 align-items-center">
+                                <img [src]="subject.img" alt="Imagen de asignatura" width="720" height="350" class="imgCarousel">
+                                <p class="text-left">{{subject.description}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+            </p-carousel>
+        </section>
+    </article>
+
+    <article>
+        <h2>Acerca de la URLA</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt unde sint fugiat a eligendi eaque explicabo, suscipit officiis
+        doloribus distinctio magnam, aliquid molestias placeat deserunt exercitationem. Officiis nostrum ratione corrupti eius recusandae quia
+        fugiat sequi impedit illum, explicabo rerum eveniet!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse dicta quasi sapiente deserunt incidunt impedit at commodi. Error corrupti
+        laborum eius facere, similique alias odio ea. Neque nemo id dolorum, ipsum ipsam asperiores totam eaque iure quibusdam dolor voluptatum ex
+        officia quas modi vitae quisquam dicta molestias, exercitationem autem incidunt nam saepe velit quia laborum? Doloribus perspiciatis quasi
+        eligendi quaerat dolores. Labore maxime rem obcaecati atque, natus nemo reiciendis voluptatum.</p>
+         
+    </article>
+</section>

@@ -1,0 +1,12 @@
+{
+  "users": [
+    {
+      "email": "jv@hotmail.com",
+      "password": "$2a$10$AHG7bye0s.qGFFDykygVzOUnVhksOdyvp1vwyri3dPbyNCQqg3YS.",
+      "firstname": "jordan",
+      "lastname": "vera",
+      "id": 1
+    }
+  ],
+  "login": []
+}

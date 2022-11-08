@@ -1,0 +1,43 @@
+:host ::ng-deep {
+    .menu{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        border-radius: 0;
+        background-color: lightgrey;
+        i{
+            font-size: 1.5em;
+        }
+        .title{
+            font-weight: 700;
+            font-family: 'Bitter', serif;
+        }
+        span{
+            color: darkblue;
+        }
+        span:hover{
+            color: blue;
+        }
+        span:active{
+            color: yellowgreen;
+        }
+    }
+    @media (max-width: 1440px){
+    .session{
+        visibility: hidden;
+        }
+    }
+    @media (max-width: 960px){
+        .session{
+            visibility: visible;
+        }
+    }
+}
+
+
+@media (max-width: 960px){
+    #session{
+        visibility: hidden;
+    }
+}

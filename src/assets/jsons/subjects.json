@@ -1,0 +1,53 @@
+{
+    "Asignaturas": {
+        "Ingenierías": [
+            {
+                "Ingeniería en Sistemas y Software": [],
+                "Ingeniería Civil": [],
+                "Ingeniería Electrónica": [],
+                "Ingeniería Industrial": [],
+                "Ingeniería Química": [],
+                "Ingeniería Mecánica": [],
+                "Ingeniería Ambiental": []
+            }
+        ],
+        "Profesorados": [
+            {
+                "Profesorado de Educación Física": [],
+                "Profesorado de Historia": [],
+                "Profesorado de Matemáticas": []
+            }
+        ],
+        "Licenciaturas": [
+            {
+                "Licenciatura en Diseño Gráfico": [],
+                "Licenciatura en Marqueting Digital": [],
+                "Licenciatura en Arquitectura": [],
+                "Licenciatura en Gestión Empresarial": [],
+                "Licenciatura en Diseño Industrial": []
+            }
+        ],
+        "Salud": [
+            {
+                "Medicina": [],
+                "Odontología": [],
+                "Kinesiología": [],
+                "Enfermería": []
+            }
+        ],
+        "Otros": [
+            {
+                "Higiene y Seguridad Laboral": [],
+                "Logística": [],
+                "Recursos Humanos": [],
+                "Filosofía": [],
+                "Psicología": [],
+                "Sociología": [],
+                "Administración Financiera": [],
+                "Admnistración de Empresas": [],
+                "Análisis de Sistemas Informáticos": [],
+                "Ciencias Antropológicas": []
+            }
+        ]
+    }
+}

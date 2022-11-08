@@ -1,0 +1,22 @@
+{
+    "Career": [
+        {
+            "id": 1,
+            "name": "Ingeniería en Sistemas y Software",
+            "img": "../../../../assets/images/careers/ingenieriaDeSistemas.jpg",
+            "description": "Laperiam? Consectetur alias architecto amet reiciendis voluptas dignissimos et tempore exercitationem aliquam quis animi culpa, expedita saepe est vero nisi at accusantium! Tempore, dolore dolorum."
+        },
+        {
+            "id": 2,
+            "name": "Ingeniería Civil",
+            "img": "../../../../assets/images/careers/ingCivil.jpg",
+            "description": "Laperiam? Consectetur alias architecto amet reiciendis voluptas dignissimos et tempore exercitationem aliquam quis animi culpa, expedita saepe est vero nisi at accusantium! Tempore, dolore dolorum."
+        },
+        {
+            "id": 3,
+            "name": "Profesorado de Historia",
+            "img": "../../../../assets/images/careers/profesorHistoria.jpg",
+            "description": "Laperiam? Consectetur alias architecto amet reiciendis voluptas dignissimos et tempore exercitationem aliquam quis animi culpa, expedita saepe est vero nisi at accusantium! Tempore, dolore dolorum."
+        }
+    ]
+}

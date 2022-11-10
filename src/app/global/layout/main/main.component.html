@@ -1,18 +1,17 @@
-<section>
-    <h1>Contenido principal</h1>
-</section>
-<section>
+<h1>Contenido principal</h1>
+
+<section class="content">
     <article class="md:flex md:flex-nowrap sm:flex sm:flex-wrap gap-4">
         <div>
             <p-image src="../../../../assets/images/URLA.png" alt="Logo de la facultad" height="200" width="300" [preview]="false"></p-image>
         </div>
         <div class="text-justify border-dashed border-1 border-x-none p-2">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, consectetur. Facilis neque maiores 
+            <p class="line-height-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, consectetur. Facilis neque maiores 
             quaerat inventore molestias suscipit mollitia. Adipisci distinctio assumenda doloribus debitis perferendis 
             dolor deserunt molestias. Quibusdam repellat ut placeat nobis consequuntur odio, odit blanditiis, eveniet 
             facere laborum porro ea, est distinctio soluta itaque modi velit ducimus dignissimos labore!</p>
 
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis magni nisi optio fugiat alias 
+            <p class="line-height-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis magni nisi optio fugiat alias 
             nobis reiciendis iure cumque quaerat hic! Assumenda beatae corporis adipisci libero numquam facere repudiandae 
             accusamus dolorum, laboriosam tempore, eum, natus perferendis cumque nihil fugit recusandae. Tempore.</p>
         </div>
@@ -20,26 +19,25 @@
 
     <article>
         <h2>Segundo contenido principal</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt repellat eligendi aliquid totam adipisci 
+        <p class="line-height-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt repellat eligendi aliquid totam adipisci 
         error fugiat iure odio expedita quidem.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda aut doloribus consectetur quos rem atque 
+        <p class="line-height-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda aut doloribus consectetur quos rem atque 
         aperiam? Consectetur alias architecto amet reiciendis voluptas dignissimos et tempore exercitationem aliquam 
         quis animi culpa, expedita saepe est vero nisi at accusantium! Tempore, dolore dolorum.</p>
 
-        <section>
+        <section class="content-carousel">
             <p-carousel [value]="subjectItems" [circular]="true" [showIndicators]="true" [autoplayInterval]="3000" 
-            [responsiveOptions]="responsiveOptions" [showNavigators]="true" >
+             [showNavigators]="true" >
                 <ng-template pTemplate="header">
-                    <h3>Asignaturas de la carrera</h3>
+                    <h3 class="underline text-center font-semibold" style="text-shadow: 3px 5px 5px black; 
+                    font-family:Georgia, 'Times New Roman', Times, serif;">Asignaturas del instituto</h3>
                 </ng-template>
                 <ng-template let-subject pTemplate="item">
                     <div class="subject-item">
                         <div class="subject-item-content">
                             <h5 class="p-mb-1">○ {{subject.name}}</h5>
-                            <div class="flex gap-5 align-items-center">
-                                <img [src]="subject.img" alt="Imagen de asignatura" width="720" height="350" class="imgCarousel">
-                                <p class="text-left">{{subject.description}}</p>
-                            </div>
+                            <img [src]="subject.img" alt="Imagen de asignatura" class="imgCarousel">
+                            <p>{{subject.description}}</p>
                         </div>
                     </div>
                 </ng-template>
@@ -49,13 +47,129 @@
 
     <article>
         <h2>Acerca de la URLA</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt unde sint fugiat a eligendi eaque explicabo, suscipit officiis
+        <p class="line-height-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt unde sint fugiat a eligendi eaque explicabo, suscipit officiis
         doloribus distinctio magnam, aliquid molestias placeat deserunt exercitationem. Officiis nostrum ratione corrupti eius recusandae quia
         fugiat sequi impedit illum, explicabo rerum eveniet!</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse dicta quasi sapiente deserunt incidunt impedit at commodi. Error corrupti
+        <p class="line-height-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse dicta quasi sapiente deserunt incidunt impedit at commodi. Error corrupti
         laborum eius facere, similique alias odio ea. Neque nemo id dolorum, ipsum ipsam asperiores totam eaque iure quibusdam dolor voluptatum ex
         officia quas modi vitae quisquam dicta molestias, exercitationem autem incidunt nam saepe velit quia laborum? Doloribus perspiciatis quasi
         eligendi quaerat dolores. Labore maxime rem obcaecati atque, natus nemo reiciendis voluptatum.</p>
-         
+        
+        <p class="line-height-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam aut unde repudiandae minima reprehenderit sed earum id quisquam nostrum
+         sit accusantium quod ea tempore culpa officiis nobis, eum non expedita.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore aliquid cupiditate perspiciatis consequuntur vel voluptates voluptate 
+        exercitationem dicta nihil debitis.</p>
+
+        <p-table [value]="itemsTable" [columns]="colsTable" responsiveLayout="scroll" styleClass="border-solid border-round-xs p-datatable-striped"
+        [paginator]="true" [rows]="5" [showCurrentPageReport]="true" currentPageReportTemplate="Mostrando {first} a {last} de {totalRecords} registros" 
+        [rowsPerPageOptions]="[5,10,15]" [scrollable]="false"  [scrollDirection]="'both'" [resizableColumns]="true" #tableContent>
+        <ng-template pTemplate="caption">
+            <div class="flex justify-content-between align-item-center sm:flex-none">
+                <h4 class="lg:uppercase lg:underline sm:lowercase">Asignaturas de la institución</h4>
+                <div class="inline-flex">
+                    <button type="button" pButton pRipple icon="pi pi-fw pi-file-pdf " (click)="exportPdf()" class="p-button-primary p-button-rounded mt-2 mr-2"
+                    pTooltip="Descargar pdf" tooltipPosition="bottom"></button>
+                    <button type="button" pButton pRipple icon="pi pi-fw pi-file-excel " (click)="exportExcel()" class="p-button-success p-button-rounded mt-2 mr-2"
+                    pTooltip="Descargar archivo" tooltipPosition="bottom"></button>
+                    <img src="../../../../assets/images/URLA.png" alt="Logo de la instutución" width="100" height="60" 
+                    class="border-round-md" id="imgTable">
+                </div>
+            </div>
+        </ng-template>
+            <ng-template pTemplate="header" let-columns>
+                <tr>
+                    <th *ngFor="let col of columns" class="text-sm text-center uppercase">
+                        {{ col.header }}
+                    </th>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-item let-index="rowIndex">
+                <tr>
+                    <td># {{index + 1}}</td>
+                    <td>{{item.code}}</td>
+                    <td>{{item.career}}</td>
+                    <td>{{item.duration}} años</td>
+                    <td>{{item.contact}}</td>
+                    <td>{{item.phone}}</td>
+                    <td>{{item.address}}</td>
+                    <td>{{item.country}}</td>
+                    <td>{{item.province}}</td>
+                    <td>{{item.city}}</td>
+                    <td>{{item.head_area}}</td>
+                    <td>
+                        <ng-container *ngIf="item.floor == 1 || item.floor == 2">Piso {{item.floor}}</ng-container>
+                        <ng-container *ngIf="item.floor == 0">-</ng-container>
+                    </td>
+                </tr>
+            </ng-template>
+        </p-table>
+    </article>
+
+    <article>
+        <h2>Tercer contenido</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe quasi asperiores nobis dicta facilis molestiae 
+        magnam dolor sed officiis accusantium vero temporibus explicabo nam obcaecati voluptas adipisci quas iste quam, 
+        maiores autem nemo, minima corrupti deleniti ipsa. Ex placeat, culpa et accusamus quaerat quasi officiis consequuntur
+        esse commodi voluptatibus ut.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe quasi asperiores nobis dicta facilis molestiae 
+        magnam dolor sed officiis accusantium vero temporibus explicabo nam obcaecati voluptas adipisci quas iste quam, 
+        maiores autem nemo, minima corrupti deleniti ipsa. Ex placeat, culpa et accusamus quaerat quasi officiis consequuntur
+        esse commodi voluptatibus ut.</p>
+
+        <h4 class="underline">Lorem ipsum dolor sit.</h4>
+        <ul>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem, ipsum dolor.</li>
+        </ul>
+
+        <hr>
+
+        <!-- Los datos estarán en la api, esto para muestra de ejemplo -->
+        <div class="lg:flex md:flex md:flex-nowrap md:gap-2 sm:gap-3 lg:justify-content-between lg:gap-4 sm:flex-wrap lg:flex-nowrap">
+            <p-card header="Advanced Card" subheader="Card Subheader" styleClass="p-card-shadow">
+                <ng-template pTemplate="header">
+                    <img alt="Card" src="../../../../assets/images/URLA.png" style="height: 200px; object-fit: cover;">
+                </ng-template>
+                <ng-template pTemplate="content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt
+                        quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!</p>
+                </ng-template>
+                <ng-template pTemplate="footer">Lorem ipsum dolor sit amet.</ng-template>
+            </p-card>
+            <p-card header="Advanced Card" subheader="Card Subheader" styleClass="p-card-shadow">
+                <ng-template pTemplate="header">
+                    <img alt="Card" src="../../../../assets/images/URLA.png" style="height: 200px; object-fit: cover;">
+                </ng-template>
+                <ng-template pTemplate="content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt
+                        quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!</p>
+                </ng-template>
+                <ng-template pTemplate="footer">Lorem ipsum dolor sit amet.</ng-template>
+            </p-card>
+            <p-card header="Advanced Card" subheader="Card Subheader" styleClass="p-card-shadow">
+                <ng-template pTemplate="header">
+                    <img alt="Card" src="../../../../assets/images/URLA.png" style="height: 200px; object-fit: cover;">
+                </ng-template>
+                <ng-template pTemplate="content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt
+                        quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!</p>
+                </ng-template>
+                <ng-template pTemplate="footer">Lorem ipsum dolor sit amet.</ng-template>
+            </p-card>
+            <p-card header="Advanced Card" subheader="Card Subheader" styleClass="p-card-shadow">
+                <ng-template pTemplate="header">
+                    <img alt="Card" src="../../../../assets/images/URLA.png" style="height: 200px; object-fit: cover;">
+                </ng-template>
+                <ng-template pTemplate="content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt
+                        quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!</p>
+                </ng-template>
+                <ng-template pTemplate="footer">Lorem ipsum dolor sit amet.</ng-template>
+            </p-card>
+        </div>
     </article>
 </section>

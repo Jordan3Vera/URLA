@@ -32,6 +32,8 @@ import { KeyFilterModule } from 'primeng/keyfilter';
 import { DividerModule } from 'primeng/divider';
 import { ImageModule } from 'primeng/image';
 import {CarouselModule} from 'primeng/carousel';
+import {FieldsetModule} from 'primeng/fieldset';
+import {BreadcrumbModule} from 'primeng/breadcrumb';
 
 @NgModule({
     imports: [
@@ -68,7 +70,9 @@ import {CarouselModule} from 'primeng/carousel';
     KeyFilterModule,
     DividerModule,
     ImageModule,
-    CarouselModule
+    CarouselModule,
+    FieldsetModule,
+    BreadcrumbModule
     ]
 })
 export class PrimengModule {}

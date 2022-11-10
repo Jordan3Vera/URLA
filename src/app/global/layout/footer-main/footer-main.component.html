@@ -1,1 +1,110 @@
-<p>footer-main works!</p>
+<section class="bg-black-alpha-90 absolute right-0 left-0 text-white pb-5">
+    <div class="flex justify-content-evenly alig-content-center flex-wrap">
+        
+        <!-- Las redes sociales -->
+        <div class="flex flex-column">
+            <img src="../../../../assets/images/URLA.png" alt="Logo de la institución"
+            width="150" height="100" class="mt-3 boder-solid border-1 border-round-sm">
+            <div class="flex flex-column">
+                <h6 class="text-lg underline my-3">Mis redes sociales</h6>
+                <div class="flex gap-2" id="iconsFooter">
+                    <i class="fa-brands fa-facebook" pTooltip="Facebook" tooltipPosition="top"></i>
+                    <i class="fa-brands fa-instagram" pTooltip="Instagram" tooltipPosition="top"></i>
+                    <i class="fa-brands fa-whatsapp" pTooltip="Whatsapp" tooltipPosition="top"></i>
+                    <i class="fa-brands fa-twitter" pTooltip="Twitter" tooltipPosition="top"></i>
+                    <i class="fa-brands fa-blogger" pTooltip="Blogger" tooltipPosition="top"></i>
+                    <i class="fa-brands fa-github" pTooltip="Github" tooltipPosition="top"></i>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Acerca de la institución -->
+        <div class="w-4">
+            <h5 class="text-lg underline">Acerca de la URLA</h5>
+            <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error explicabo 
+            nam quae voluptate a alias voluptas, placeat ipsa iusto omnis. Officiis laboriosam minima 
+            fuga modi dolor facere, repellat sunt? Eaque!</p>
+            <ul class="ulFooter">
+                <li>
+                    <strong class="font-italic">Autor:</strong> Jordan Vera
+                </li>
+                <li>
+                    <strong class="font-italic">Teléfono:</strong> +543364355860
+                </li>
+                <li>
+                    <strong class="font-italic">Dirección:</strong> Buenos Aires -Argentina
+                </li>
+            </ul>
+        </div>
+
+        <!-- Formulario de consulta -->
+        <div class="mt-3">
+            <p-fieldset legend="Contacto" [toggleable]="false">
+                <ng-template pTemplate="content">
+                    <form>
+                        <div>
+                            <label for="name" class="font-bold">Nombre y apellido</label>
+                            <div class="grid p-fluid mt-1">
+                                <div class="col-12 md:col-12">
+                                    <div class="p-inputgroup">
+                                        <input type="text" pInputText placeholder="Ingresar nombre y apellido">
+                                        <span class="p-inputgroup-addon">
+                                            <i class="pi pi-fw pi-user"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="name" class="font-bold">Correo electrónico</label>
+                            <div class="grid p-fluid mt-1">
+                                <div class="col-12 md:col-12">
+                                    <div class="p-inputgroup">
+                                        <input type="email" pInputText placeholder="Ingresar correo electrónico">
+                                        <span class="p-inputgroup-addon">
+                                            <i class="fa-solid fa-envelope"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="description" class="font-bold">Consulta</label>
+                            <div class="grid p-fluid mt-1">
+                                <textarea pInputTextarea [rows]="4" [cols]="30" [autoResize]="true"
+                                placeholder="Dinos tu consulta..."></textarea>
+                            </div>
+                        </div>
+                        <div class="grid mt-2 right-auto">
+                            <button type="button" pButton class="p-button-success font-semibold border-round-xs"
+                            pTooltip="Enviar consulta">Enviar</button>
+                        </div>
+                    </form>
+                </ng-template>
+            </p-fieldset>
+        </div>
+    </div>
+
+    <div class="bg-red-900 absolute right-0 left-0 mt-3">
+        <div class="flex justify-content-between mx-5 alig-content-center mt-2 flex-wrap">
+            <div class="flex flex-column my-3 flex-wrap">
+                <div class="mb-2">
+                    <p-breadcrumb [model]="items" styleClass="breadcrumb"></p-breadcrumb>
+                </div>
+                <div class="my-3">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span class="ml-2">Av. Puerto Madero 2354 - Buenos Aires - Argentina</span>
+                </div>
+                <div>
+                    <strong class="font-italic text-sm">@ Copyright EasyF_Desarrollo - 2022</strong>
+                </div>
+            </div>
+            <div class="my-3 flex flex-column">
+                <p-dropdown [options]="languages" [(ngModel)]="selectedLang" [placeholder]="'Seleccionar idioma'"
+                [showClear]="true" [optionLabel]="'lang'" styleClass="border-round-xs"></p-dropdown>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+    </div>
+</section>
+

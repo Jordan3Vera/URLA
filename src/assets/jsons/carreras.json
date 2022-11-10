@@ -17,6 +17,108 @@
             "name": "Profesorado de Historia",
             "img": "../../../../assets/images/careers/profesorHistoria.jpg",
             "description": "Laperiam? Consectetur alias architecto amet reiciendis voluptas dignissimos et tempore exercitationem aliquam quis animi culpa, expedita saepe est vero nisi at accusantium! Tempore, dolore dolorum."
+        },
+        {
+            "id": 4,
+            "name": "Ingeniería Ambiental",
+            "img": "../../../../assets/images/careers/ingAmbiental.jpg",
+            "description": "Laperiam? Consectetur alias architecto amet reiciendis voluptas dignissimos et tempore exercitationem aliquam quis animi culpa, expedita saepe est vero nisi at accusantium! Tempore, dolore dolorum."
+        },
+        {
+            "id": 5,
+            "name": "Ingeniería Química",
+            "img": "../../../../assets/images/careers/ingQuimica.jpg",
+            "description": "Laperiam? Consectetur alias architecto amet reiciendis voluptas dignissimos et tempore exercitationem aliquam quis animi culpa, expedita saepe est vero nisi at accusantium! Tempore, dolore dolorum."
+        },
+        {
+            "id": 6,
+            "name": "Enfermería",
+            "img": "../../../../assets/images/careers/enfermeria.png",
+            "description": "Laperiam? Consectetur alias architecto amet reiciendis voluptas dignissimos et tempore exercitationem aliquam quis animi culpa, expedita saepe est vero nisi at accusantium! Tempore, dolore dolorum."
+        },
+        {
+            "id": 7,
+            "name": "Ingeniería Mecánica",
+            "img": "../../../../assets/images/careers/ingMecanica.jpg",
+            "description": "Laperiam? Consectetur alias architecto amet reiciendis voluptas dignissimos et tempore exercitationem aliquam quis animi culpa, expedita saepe est vero nisi at accusantium! Tempore, dolore dolorum."
+        },
+        {
+            "id": 8,
+            "name": "Tecnicatura Superior de Higiene y Seguridad en el Trabajo",
+            "img": "../../../../assets/images/careers/hys.jpg",
+            "description": "Laperiam? Consectetur alias architecto amet reiciendis voluptas dignissimos et tempore exercitationem aliquam quis animi culpa, expedita saepe est vero nisi at accusantium! Tempore, dolore dolorum."
+        },
+        {
+            "id": 9,
+            "name": "Licenciatura en Diseño Gráfico",
+            "img": "../../../../assets/images/careers/diseñoGrafico.jpg",
+            "description": "Laperiam? Consectetur alias architecto amet reiciendis voluptas dignissimos et tempore exercitationem aliquam quis animi culpa, expedita saepe est vero nisi at accusantium! Tempore, dolore dolorum."
+        },
+        {
+            "id": 10,
+            "name": "Licenciatura en Diseño Industrial",
+            "img": "../../../../assets/images/careers/diseñoIndustrial.jpg",
+            "description": "Laperiam? Consectetur alias architecto amet reiciendis voluptas dignissimos et tempore exercitationem aliquam quis animi culpa, expedita saepe est vero nisi at accusantium! Tempore, dolore dolorum."
+        },
+        {
+            "id": 11,
+            "name": "Tecnicatura Superior en Análisis de Sistemas Informáticos",
+            "img": "../../../../assets/images/careers/sistemas.jpeg",
+            "description": "Laperiam? Consectetur alias architecto amet reiciendis voluptas dignissimos et tempore exercitationem aliquam quis animi culpa, expedita saepe est vero nisi at accusantium! Tempore, dolore dolorum."
+        },
+        {
+            "id": 12,
+            "name": "Kinesiología",
+            "img": "../../../../assets/images/careers/kinesiologia.jpg",
+            "description": "Laperiam? Consectetur alias architecto amet reiciendis voluptas dignissimos et tempore exercitationem aliquam quis animi culpa, expedita saepe est vero nisi at accusantium! Tempore, dolore dolorum."
+        },
+        {
+            "id": 13,
+            "name": "Tecnicatura Superior en Logística",
+            "img": "../../../../assets/images/careers/logistica.jpg",
+            "description": "Laperiam? Consectetur alias architecto amet reiciendis voluptas dignissimos et tempore exercitationem aliquam quis animi culpa, expedita saepe est vero nisi at accusantium! Tempore, dolore dolorum."
+        },
+        {
+            "id": 14,
+            "name": "Tecnicatura Superior en Recursos Humanos",
+            "img": "../../../../assets/images/careers/rrhh.jpg",
+            "description": "Laperiam? Consectetur alias architecto amet reiciendis voluptas dignissimos et tempore exercitationem aliquam quis animi culpa, expedita saepe est vero nisi at accusantium! Tempore, dolore dolorum."
+        },
+        {
+            "id": 15,
+            "name": "Administración Financiera",
+            "img": "../../../../assets/images/careers/admiFinanciera.jpg",
+            "description": "Laperiam? Consectetur alias architecto amet reiciendis voluptas dignissimos et tempore exercitationem aliquam quis animi culpa, expedita saepe est vero nisi at accusantium! Tempore, dolore dolorum."
+        },
+        {
+            "id": 16,
+            "name": "Adontología",
+            "img": "../../../../assets/images/careers/adontologia.jpg",
+            "description": "Laperiam? Consectetur alias architecto amet reiciendis voluptas dignissimos et tempore exercitationem aliquam quis animi culpa, expedita saepe est vero nisi at accusantium! Tempore, dolore dolorum."
+        },
+        {
+            "id": 19,
+            "name": "Medicina",
+            "img": "../../../../assets/images/careers/medicina.jpg",
+            "description": "Laperiam? Consectetur alias architecto amet reiciendis voluptas dignissimos et tempore exercitationem aliquam quis animi culpa, expedita saepe est vero nisi at accusantium! Tempore, dolore dolorum."
+        },
+        {
+            "id": 20,
+            "name": "Licenciatura en Arquitectura",
+            "img": "../../../../assets/images/careers/arquitectura.jpg",
+            "description": "Laperiam? Consectetur alias architecto amet reiciendis voluptas dignissimos et tempore exercitationem aliquam quis animi culpa, expedita saepe est vero nisi at accusantium! Tempore, dolore dolorum."
+        },
+        {
+            "id": 21,
+            "name": "Licenciatura en Gestión Empresarial",
+            "img": "../../../../assets/images/careers/gestionEmpresarial.jpg",
+            "description": "Laperiam? Consectetur alias architecto amet reiciendis voluptas dignissimos et tempore exercitationem aliquam quis animi culpa, expedita saepe est vero nisi at accusantium! Tempore, dolore dolorum."
+        },
+        {
+            "id": 22,
+            "name": "Profesorado de Educación Física",
+            "img": "../../../../assets/images/careers/educacionFisica.jpg",
+            "description": "Laperiam? Consectetur alias architecto amet reiciendis voluptas dignissimos et tempore exercitationem aliquam quis animi culpa, expedita saepe est vero nisi at accusantium! Tempore, dolore dolorum."
         }
     ]
 }

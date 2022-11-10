@@ -1,10 +1,9 @@
 {
     "Asignaturas": {
-        "Ingenierías": [
+        "Ingenierías": [    
             {
                 "Ingeniería en Sistemas y Software": [],
                 "Ingeniería Civil": [],
-                "Ingeniería Electrónica": [],
                 "Ingeniería Industrial": [],
                 "Ingeniería Química": [],
                 "Ingeniería Mecánica": [],
@@ -14,14 +13,12 @@
         "Profesorados": [
             {
                 "Profesorado de Educación Física": [],
-                "Profesorado de Historia": [],
-                "Profesorado de Matemáticas": []
+                "Profesorado de Historia": []
             }
         ],
         "Licenciaturas": [
             {
                 "Licenciatura en Diseño Gráfico": [],
-                "Licenciatura en Marqueting Digital": [],
                 "Licenciatura en Arquitectura": [],
                 "Licenciatura en Gestión Empresarial": [],
                 "Licenciatura en Diseño Industrial": []
@@ -35,18 +32,13 @@
                 "Enfermería": []
             }
         ],
-        "Otros": [
+        "Tecnicaturas": [
             {
-                "Higiene y Seguridad Laboral": [],
-                "Logística": [],
-                "Recursos Humanos": [],
-                "Filosofía": [],
-                "Psicología": [],
-                "Sociología": [],
+                "Tecnicatura Superior de Higiene y Seguridad en el trabajo": [],
+                "Tecnicatura Superior en Logística": [],
+                "Tecnicatura Superior en Recursos Humanos": [],
                 "Administración Financiera": [],
-                "Admnistración de Empresas": [],
-                "Análisis de Sistemas Informáticos": [],
-                "Ciencias Antropológicas": []
+                "Tecnicatura Superior en Análisis de Sistemas Informáticos": []
             }
         ]
     }

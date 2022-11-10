@@ -1,0 +1,53 @@
+#iconsFooter{
+    font-size: 1.5em;
+    cursor: pointer;
+}
+#iconsFooter i:hover{
+    color: green;
+}
+.ulFooter{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.ulFooter li{
+    margin: 10px 0;
+}
+
+:host ::ng-deep{
+    .p-fieldset{
+        background-color: lightgrey;
+        border-radius: 2px;
+        .p-fieldset-legend{
+            color: #000;
+            border-radius: 2px;
+            font-family: 'Bitter';
+            background-color: rgb(167, 154, 154);
+            border: none;
+            opacity: 0.9;
+        }
+    }
+
+    .breadcrumb{
+        background-color: transparent;
+        border-radius: 0;
+        border: none;
+        margin: 0;
+        padding: 0;
+        .p-menuitem-text{
+            color: #f2f2f2;
+        }
+
+        .lang{
+            color: lightgreen;
+        }
+    }
+
+    .p-dropdown{
+        border-radius: 0;
+        background-color: #f2f2f2;
+        .p-dropdown-items{
+            background-color: lightgrey;
+        }
+    }
+}

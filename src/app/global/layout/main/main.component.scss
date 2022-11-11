@@ -33,6 +33,13 @@ tr td{
     text-align: center;
 }
 
+.cards{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 1em;
+}
+
 :host ::ng-deep{
     .p-datatable{
         tr th{
@@ -55,15 +62,28 @@ tr td{
 }
 
 // Para pantallas de telefonos celulares
-@media (max-width: 576px){
+@media (max-width: 480px){
     #imgTable{
         visibility: hidden;
+    }
+    .content{
+        width: 95%;
+        margin: auto;
+    }
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
     }
 }
 
 // Para pantallas de tablets
-@media (max-width: 768px){
-   
+@media (max-width: 980px){
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1em;
+    }
 }
 
 // Para pantallas de computador de monitor

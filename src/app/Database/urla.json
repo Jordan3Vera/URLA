@@ -6,6 +6,13 @@
       "firstname": "jordan",
       "lastname": "vera",
       "id": 1
+    },
+    {
+      "email": "tincho@hotmail.com",
+      "password": "$2a$10$Gfl6Q.h5MWGigQep93XvwOykSp3PEQVEvh9wYysWnWBJf.M8gGRiS",
+      "username": "Martin",
+      "confirmPassword": "123456",
+      "id": 2
     }
   ],
   "login": []

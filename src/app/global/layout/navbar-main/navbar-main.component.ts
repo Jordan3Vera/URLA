@@ -20,11 +20,8 @@ export class NavbarMainComponent implements OnInit {
   items: MenuItem[] = [];
 
   ngOnInit(): void {
-    this.page.setTitle("Facultad IS");
-    
     this.item = [
-      { label: 'Facultad de ingeniería y software', styleClass: 'title border-noround', 
-        visible: true, routerLink: '/main', disabled: false },
+      { label: 'Institución URLA', styleClass: 'title border-noround', visible: true, routerLink: '/main', disabled: false },
       { label: 'Iniciar sesion', styleClass: 'session', icon: 'pi pi-fw pi-user', routerLink: '/login'},
       { label: 'Registrarse', styleClass: 'session', icon: 'pi pi-fw pi-user-plus', routerLink: '/register'}
     ];

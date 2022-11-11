@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  jsonSubjects: '../../../../assets/jsons/carreras.json'
+  jsonSubjects: '../../../../assets/jsons/carreras.json',
+  APIFAKE: 'http://localhost:3000/'
 };
 
 /*

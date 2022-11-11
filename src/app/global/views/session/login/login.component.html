@@ -1,1 +1,35 @@
-<p>login works!</p>
+<div style="margin-bottom: 5em;">
+    <app-navbar-main></app-navbar-main>
+</div>
+
+<section class="grid col-4 m-auto">
+    <p-card>
+        <ng-template pTemplate="header">
+            <img src="assets/images/URLA.png" alt="Imagen de la institución">
+        </ng-template>
+        <ng-template pTemplate="content">
+            <form autocomplete="off" [formGroup]="loginForm" (ngSubmit)="loginApiFake()">
+                <div class="field">
+                    <label for="email" class="font-bold">Coreo electrónico</label>
+                    <div class="p-inputgroup">
+                        <span class="p-inputgroup-addon border-noround">@</span>
+                        <input type="text" id="email" pInputText autofocus name="email" formControlName="email" 
+                        [pKeyFilter]="'email'" [pValidateOnly]="true" placeholder="Ingresar correo" class="border-noround outline-none">
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="password" class="font-bold">Contraseña</label>
+                    <div class="p-inputgroup">
+                        <span class="p-inputgroup-addon border-noround"><i class="fa-solid fa-key"></i></span>
+                        <input type="password" pInputText id="password" name="password" formControlName="password" placeholder="Ingresar contraseña">
+                    </div>
+                </div>
+                <div class="field flex align-items-center justify-content-between">
+                    <button type="submit"  [disabled]="loginForm.invalid" pButton pTooltip="Acceder" tooltipPosition="bottom" >Ingresar</button>
+                    <a routerLink="/reset-pass" class="text-yellow-500 font-bold font-itelic no-underline hover:underline"
+                    pTooltip="Recuperar cuenta" tooltipPosition="bottom">¿Olvidaste la contraseña?</a>
+                </div>
+            </form>
+        </ng-template>
+    </p-card>
+</section>

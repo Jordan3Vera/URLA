@@ -1,9 +1,13 @@
+<div style="margin-bottom: 5em;">
+    <app-navbar-main></app-navbar-main>
+</div>
+
 <h1>Contenido principal</h1>
 
 <section class="content">
     <article class="md:flex md:flex-nowrap sm:flex sm:flex-wrap gap-4">
         <div>
-            <p-image src="../../../../assets/images/URLA.png" alt="Logo de la facultad" height="200" width="300" [preview]="false"></p-image>
+            <p-image src="assets/images/URLA.png" alt="Logo de la facultad" height="200" width="300" [preview]="false"></p-image>
         </div>
         <div class="text-justify border-dashed border-1 border-x-none p-2">
             <p class="line-height-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, consectetur. Facilis neque maiores 
@@ -129,8 +133,8 @@
         <hr>
 
         <!-- Los datos estarán en la api, esto para muestra de ejemplo -->
-        <div class="lg:flex md:flex md:flex-nowrap md:gap-2 sm:gap-3 lg:justify-content-between lg:gap-4 sm:flex-wrap lg:flex-nowrap">
-            <p-card header="Advanced Card" subheader="Card Subheader" styleClass="p-card-shadow">
+        <div class="cards">
+            <p-card header="Advanced Card1" subheader="Card Subheader" styleClass="p-card-shadow">
                 <ng-template pTemplate="header">
                     <img alt="Card" src="../../../../assets/images/URLA.png" style="height: 200px; object-fit: cover;">
                 </ng-template>
@@ -140,7 +144,7 @@
                 </ng-template>
                 <ng-template pTemplate="footer">Lorem ipsum dolor sit amet.</ng-template>
             </p-card>
-            <p-card header="Advanced Card" subheader="Card Subheader" styleClass="p-card-shadow">
+            <p-card header="Advanced Card2" subheader="Card Subheader" styleClass="p-card-shadow">
                 <ng-template pTemplate="header">
                     <img alt="Card" src="../../../../assets/images/URLA.png" style="height: 200px; object-fit: cover;">
                 </ng-template>
@@ -150,7 +154,7 @@
                 </ng-template>
                 <ng-template pTemplate="footer">Lorem ipsum dolor sit amet.</ng-template>
             </p-card>
-            <p-card header="Advanced Card" subheader="Card Subheader" styleClass="p-card-shadow">
+            <p-card header="Advanced Card3" subheader="Card Subheader" styleClass="p-card-shadow">
                 <ng-template pTemplate="header">
                     <img alt="Card" src="../../../../assets/images/URLA.png" style="height: 200px; object-fit: cover;">
                 </ng-template>
@@ -160,7 +164,7 @@
                 </ng-template>
                 <ng-template pTemplate="footer">Lorem ipsum dolor sit amet.</ng-template>
             </p-card>
-            <p-card header="Advanced Card" subheader="Card Subheader" styleClass="p-card-shadow">
+            <p-card header="Advanced Card4" subheader="Card Subheader" styleClass="p-card-shadow">
                 <ng-template pTemplate="header">
                     <img alt="Card" src="../../../../assets/images/URLA.png" style="height: 200px; object-fit: cover;">
                 </ng-template>
@@ -173,3 +177,6 @@
         </div>
     </article>
 </section>
+<div style="margin-top: 5em">
+    <app-footer-main></app-footer-main>
+</div>

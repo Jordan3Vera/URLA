@@ -1,12 +1,12 @@
 {
-  "name": "facultad-is",
+  "name": "urla",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "server": "json-server ./src/app/Database/bookstore.json -m ./node_modules/json-server-auth",
+    "server": "json-server ./src/app/Database/urla.json -m ./node_modules/json-server-auth",
     "test": "ng test"
   },
   "private": true,

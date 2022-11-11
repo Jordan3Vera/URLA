@@ -339,6 +339,7 @@ export class MainComponent implements OnInit {
 
   ngOnInit(): void {
     this.page.setTitle("URLA");
+    this.storage.set('isLoggedIn', false);
 
     // Para el carousel 
     this.subjectSvc.Subjects().subscribe({
